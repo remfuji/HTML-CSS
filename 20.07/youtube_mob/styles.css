@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    height: 60px;
+    align-items: center;
+    padding: 0px 10px;
+}
+main{
+    display: flex;
+    height: 100vh;
+    background-color: #2d2d2d;
+    
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 10%;
+    align-items: center;
+}
+aside > div:first-child {
+    padding-top: 10px;
+}
+aside > div {
+    padding: 20px 0px;
+}
+.container{
+    display: flex;
+    background-color: bisque;
+    width: 100%;
+    
+}
+.video-section{
+    display: flex;
+    padding: 10px 10px;
+}
+.video-tag{
+    margin-right: 10px;
+    padding-right: 10px;
+    background-color: #464545;
+    height: fit-content;
+
+}

@@ -1,0 +1,30 @@
+p > strong:nth-child(2) {
+    font-style: italic;
+}
+
+p > i:hover{
+    font-weight: bold;
+    color: gold;
+}
+
+
+ul li:nth-child(2n) {
+    text-decoration: underline;
+}
+
+span + cite {
+    font-weight: bold;   
+}
+
+p > span {
+    font-family: monospace;
+    color: blue;
+    background-color: antiquewhite;
+    border: 1px solid wheat;
+}
+cite::before{
+    content: '❝';
+}
+cite::after {
+    content: '❞';
+}

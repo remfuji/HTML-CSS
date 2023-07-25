@@ -1,0 +1,53 @@
+section {
+  display: flex;
+}
+nav,
+main,
+footer,
+.artist,
+list-song {
+  border: 1px solid black;
+}
+nav {
+  flex-grow: 1;
+}
+main {
+  flex-grow: 4;
+}
+.artist{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+main > .artist > p{
+    margin: 0;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+     
+}
+footer > p{
+    margin: 0;
+}
+.list-song {
+    display: flex;
+    flex-direction: column;
+}
+.list-song > div {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.list-song > div > p{
+    margin: 0;
+}
+h5{
+    margin-top: 0;
+}
+section.main {
+  display: flex;
+  align-items:center;
+  
+}
+

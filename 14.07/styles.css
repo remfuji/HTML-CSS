@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: auto 20%;
+    background-color: rgb(253, 243, 226);
+}
+
+h1 + p {
+    margin-top: 50px;
+}
+
+h2 + p {
+    margin-bottom: 2px;
+}
+
+h1 {
+    font-family: "Trade Winds", cursive;
+    color: #333;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.autore {
+    color: #777;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.data {
+    color: #777;
+    font-size: 14px;
+    margin-top: auto;
+    margin-bottom: 2px;
+}
+
+.intro_p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro_p > p {
+    width: 60%;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+li {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+a, .link {
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(95, 93, 93);
+  
+}
+
+a:hover {
+    color: black;
+}
+
+
+

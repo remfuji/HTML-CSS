@@ -1,0 +1,19 @@
+Buttare giu idee su come si deve comporre la nostra app.
+votare la priorita' di ogni componente e metterli insieme in base alla loro priorita'.
+
+Hallway testing:
+    Prendere la prima persona nel corridoio e fargli testare l'app e vedere come si comporta 
+
+A/B testing:
+    Spostare gli alementi della pagina da una posizione all'altra e vedere quale funziona meglio prendendo 2 gruppi di persone.
+
+Flex
+
+display flex: orientamento orizzontale
+
+flex: direction column: orientamento verticale
+
+
+
+-berche' se metto flex su body non si applica agli altri el;ementi?
+

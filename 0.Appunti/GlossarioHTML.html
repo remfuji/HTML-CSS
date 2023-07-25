@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossario HTML</title>
+    <style>
+     h1{
+      text-align: center;
+     }
+      body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      table {
+        width: 100%;
+      }
+      
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      th {
+        height: 70px;
+      }
+      tr {
+        height: 100px;
+      }
+     
+      td{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GLOSSARIO HTML</h1>
+    <table>
+      <thead>
+        <tr>
+          <th scope="row">Elemento</th>
+          <th scope="row">Descrizione</th>
+          <th scope="row">Esempio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>&lt;html&gt;</code></td>
+
+          <td>
+            Rappresenta l'elemento radice, anche detto <strong> "root"</strong>,
+            pertanto tutti gli altri elementi devono essere discendenti di
+            questo elemento
+          </td>
+          <td>...</td>
+        </tr>
+
+        <tr>
+          <td><code>&lt;head&gt;</code></td>
+
+          <td>
+            L'elemento HTML &lt;head&gt; contiene informazioni leggibili dalla
+            macchina (metadati) sul documento, come
+            <strong>&lt;title&gt;, &lt;stript&gt; e &lt;style&gt;</strong>.
+          </td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <td><code>&lt;link&gt;</code></td>
+
+          <td>
+            Specifica le relazioni tra il documento corrente e una risorsa
+            esterna. Questo elemento è più comunemente usato per collegarsi ai
+            CSS, ma è anche usato per stabilire le icone del sito (sia icone in
+            stile "favicon" che icone per la schermata iniziale e le app sui
+            dispositivi mobili) tra le altre cose.
+          </td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <td><code>&lt;body&gt;</code></td>
+
+          <td>
+            L'elemento HTML &lt;body&gt; rappresenta il contenuto di un
+            documento HTML. Può esserci un solo elemento &lt;body&gt; in un
+            documento
+          </td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <td><code>&lt;a&gt;</code></td>
+
+          <td>
+            L'elemento HTML &lt;a&gt; (o elemento anchor), con il suo attributo
+            href, crea un collegamento ipertestuale a pagine Web, file,
+            indirizzi e-mail, posizioni nella stessa pagina o qualsiasi altra
+            cosa che un URL può indirizzare. Il contenuto all'interno di ogni
+            &lt;a&gt; deve indicare la destinazione del collegamento. Se
+            l'attributo href è presente, premendo il tasto Invio mentre ci si
+            concentra sull'elemento &lt;a&gt; lo si attiverà.
+          </td>
+          <td><a href="wwww.google.it">Link google</a></td>
+        </tr>
+        <tr>
+          <td><code>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</code></td>
+
+          <td>
+            Gli elementi HTML da &lt;h1&gt; a &lt;h6&gt; rappresentano sei livelli di intestazioni di sezione.
+            &lt;h1&gt; è il livello di sezione più alto e &lt;h6&gt; è il più basso.
+          </td>
+          <td><h1>h1</h1><h2>h2</h2><h3>h3</h3></td>
+        </tr>
+        <tr>
+          <td><code>&lt;main&gt;</code></td>
+
+          <td>
+            L'elemento HTML &lt;main&gt; rappresenta il contenuto dominante del &lt;body&gt; di un documento. L'area del contenuto principale è costituita da contenuto direttamente correlato o che si espande sull'argomento centrale di un documento o sulla funzionalità centrale di un'applicazione.
+          </td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <td><code>&lt;blockquote&gt;</code></td>
+
+          <td>
+            L'elemento HTML &lt;blockquote&gt; indica che il testo racchiuso è una citazione estesa. Di solito, questo viene reso visivamente mediante indentazione. Un URL per la fonte della citazione può essere dato usando l'attributo cite, mentre una rappresentazione testuale della fonte può essere data usando l'elemento &lt;cite&gt;.
+          </td>
+          <td>
+            <blockquote cite="https://www.frasimania.it/frasi-celebri/">Dio è morto, Marx è morto, e anche io non mi sento molto bene.</blockquote> <cite>Eugène Ionesco</cite></td>
+        </tr>
+         <tr>
+          <td><code>&lt;cite&gt;</code></td>
+
+          <td>
+            L'elemento HTML &lt;cite&gt; viene utilizzato per contrassegnare il titolo di un'opera creativa citata. Il riferimento può essere in forma abbreviata secondo le convenzioni appropriate al contesto relative ai metadati di citazione.
+          </td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <td><code>&lt;div&gt;</code></td>
+
+          <td>
+            L'elemento HTML &lt;div&gt; è un contenitore generico. Non ha alcun effetto sul contenuto o sul layout fino a quando non viene stilizzato in qualche modo utilizzando i CSS (ad esempio, lo stile viene applicato direttamente ad esso o un qualche tipo di modello di layout come Flexbox viene applicato al suo elemento genitore).
+          </td>
+          <td>...</td>
+        </tr>
+         <tr>
+          <td><code>&lt;i&gt;</code></td>
+
+          <td>
+            L'elemento HTML <strong>&lt;i&gt;</strong> rappresenta un intervallo di testo che è separato dal testo normale per qualche motivo, come testo idiomatico, termini tecnici, designazioni tassonomiche, tra gli altri. Storicamente, questi sono stati presentati usando il corsivo, che è la fonte originale della denominazione <code>&lt;i&gt;</code> di questo elemento.
+          </td>
+          <td>io non sono un elemento &lt;i&gt;<br><i>io sono un elemento &lt;i&gt;</i></td>
+        </tr>
+        <tr>
+          <td><code>&lt;strong&gt;</code></td>
+
+          <td>
+            L'elemento HTML &lt;strong&gt; indica che i suoi contenuti hanno una forte importanza, serietà o urgenza. I browser in genere visualizzano i contenuti in grassetto.
+          </td>
+          <td><strong>il testo in grassetto</strong> e' un elemento &lt;strong&gt;</td>
+        </tr>
+          <tr>
+          <td><code>&lt;img&gt;</code></td>
+
+          <td>
+            L'elemento HTML &lt;img&gt; incorpora un'immagine nel documento. Si utilizza l'attributo <strong>"src"</strong> per includere il link dell'immagine.Si utilizza l'attributo <strong>"alt"</strong> per includere una descrizione testuale nel caso l'immagine non si caricasse correttamente.  </td>
+          <td>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ouaZm6MH2L_2Vo3T8K-MuZOo0pYtUFqnYw&usqp=CAU" style="width: 100px; height: 100px;" alt="gatto">
+            <img src="" style="width: 100px; height: 100px;" alt="gatto"> </td>
+        </tr>
+          <tr>
+          <td><code>&lt;table&gt;</code></td>
+
+          <td>
+            L'elemento HTML &lt;table&gt; rappresenta dati tabulari, ovvero informazioni presentate in una tabella bidimensionale composta da righe e colonne di celle contenenti dati.</td>
+          <td>questa pagina HTML e' un esempio base di utilizzo del tag &lt;table&gt;</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glossario CSS</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      table {
+        width: 100%;
+      }
+
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      th {
+        height: 70px;
+      }
+      tr {
+        height: 100px;
+      }
+
+      td {
+        text-align: center;
+      }
+      .icon::before {
+        content: "🎮";
+      }
+      .icon::after {
+        content: "🎮";
+      }
+      li:first-child {
+        border: 1px solid red;
+      }
+      .container:hover {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GLOSSARIO CSS</h1>
+    <table>
+      <thead>
+        <tr>
+          <th scope="row">Selettori</th>
+          <th scope="row">Descrizione</th>
+          <th scope="row">Esempio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>box model</code></td>
+
+          <td>
+            <img
+              src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png"
+              style="width: 500px; height: 300px">
+          </td>
+
+          <td>...</td>
+        </tr>
+         <tr>
+          <td><code>&lt;margin&gt;</code></td>
+
+          <td>
+            Il margin e' quella propieta' CSS che permette di modificare lo spazio che intercorre tra un elemento ed un altro.
+            <br />codice:
+            <code>margin: 10px; / margin: 10px 20px; / margin: 10px 20px 30px 40px;</code>
+          </td>
+          <td><div style="background-color: red; margin: 10px; border: 1px solid black;">div1</div><div style="background-color: blue; margin: 10px; border: 1px solid black;">div2</div></td>
+        </tr>
+
+        <tr>
+          <td><code>&lt;border&gt;</code></td>
+
+          <td>
+            il <strong>border</strong> e' il bordo di ogni elemento e viene
+            definito con tre proprieta'. lo spessore = border-width, lo stile =
+            border-style ed il colore = border-color. <br />codice:
+            <code>border: 2px dotted blue</code>
+          </td>
+          <td><div style="border: 2px dotted blue">ciao</div></td>
+        </tr>
+        <tr>
+          <td><code>&lt;padding&gt;</code></td>
+
+          <td>
+            Il padding e' lo spazio che intercorre tra il border e il contenuto di un elemento.
+           <br>codice:<code>padding-top: 10px;</code>
+          </td>
+          <td><div style="background-color: aqua; border: 2px solid black; padding-top: 10px;">ciao</div></td>
+        </tr>
+          <tr>
+          <td><code>background</code></td>
+
+          <td>
+            Consente di definire lo sfondo di un elemento ed e' totalmente
+            modificabile con colori e immagini.
+          </td>
+          <td style="background-color: blue"></td>
+        </tr>
+          <td><code>calc()</code></td>
+
+          <td>
+            calc() e' una funzione CSS che ti permette di definire una misura in
+            base ad altre misure sulla pagina, cioe' puoi dinamicizzare la
+            misura di un elemento figlio in base alla misura dell'elemento
+            padre.
+            <br />codice:
+            <code
+              >td{background-color: yellow; width: 100px;} div{background-color:
+              blue; width: calc(100% - 30px);}</code
+            >
+          </td>
+          <td style="background-color: yellow; width: 100px">
+            width: 100px;
+            <div style="background-color: blue; width: calc(100% - 30px)">
+              width: calc(100% - 30px)
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>cursor</code></td>
+
+          <td>
+            cursor permette di modificare la freccetta del mouse.
+            <br />codice: <code>td{cursor: crosshair;}</code>
+          </td>
+          <td style="cursor: crosshair">try me</td>
+        </tr>
+        <tr>
+          <td><code>content</code></td>
+
+          <td>
+            Usando ::before o ::after dopo l'elemento prescelto,(es:
+            <code>div::before</code>) si aggiunge l'icona desiderata prima o
+            dopo per l'elemento opportunamente identificato.
+          </td>
+          <td><div class="icon">bella questa icona!</div></td>
+        </tr>
+        <tr>
+          <td><code>::before / ::after</code></td>
+
+          <td>
+            Sono pseudo elementi, non sono presenti nella pagina. Si usano
+            principalmente per aggiungere contenuto ad un elemento (con
+            caratteristiche specifiche) ripetuto nella pagina un carattere
+            speciale o un icona.
+          </td>
+          <td>vedi <code>content</code></td>
+        </tr>
+        <tr>
+          <td><code>display</code></td>
+
+          <td>
+            Serve per gestire <strong>come</strong> un elemento viene mostrato a
+            video e <strong>se</strong> viene mostrato. le proprieta' principali
+            che lo riguardano sono:
+            <code>block, in-line, none, flex, grid</code>
+          </td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <td><code>:first-child</code></td>
+
+          <td>
+            La pseudo-classe CSS :first-child rappresenta il primo elemento tra
+            un gruppo di elementi fratelli. es: abbiamo una lista di tre
+            elementi e nel CSS vado a specificare il bordo solo per il primo
+            elemento in questo modo:
+            <code> li:first-child{ border: 1px solid red; }</code>
+          </td>
+          <td>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><code>:hover</code></td>
+
+          <td>
+            La pseudo-classe CSS :hover corrisponde quando l'utente interagisce
+            con un elemento con un dispositivo di puntamento, ma non lo attiva
+            necessariamente. Generalmente viene attivato quando l'utente passa
+            sopra un elemento con il cursore (puntatore del mouse).
+            <br />codice:
+            <code>.container:hover{ background-color: brown; }</code>
+          </td>
+          <td class="container">container</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

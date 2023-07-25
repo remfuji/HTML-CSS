@@ -1,0 +1,72 @@
+.logo > img {
+    width: 100px;
+    height: 100px;
+}
+
+div{
+    display: flex;
+    border: 1px solid black;
+    
+}
+.container{
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.container-main {
+    
+    justify-content: space-between;
+}
+.logo-txt {
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.txt, .txt-under {
+    flex-direction: column;
+}
+
+
+.txt-under > p {
+    margin: 0 5px;   
+}
+.txt > p {
+    margin: 0;
+
+}
+.txt {
+    justify-content: end;
+}
+.nickname {
+    font-family: 'Dokdo', cursive;
+    font-size: 30px;
+}
+.txt > p > a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: small;
+    color:rgb(130, 71, 71) ;
+    
+}
+
+.boat {
+    width: 250px;
+    
+}
+.boat > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+
+
+
+
+
+
+
+    

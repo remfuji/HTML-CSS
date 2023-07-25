@@ -1,0 +1,21 @@
+.italic {
+    font-style: italic;
+}
+
+p > i:hover {
+    font-weight: bold;
+    color: gold;
+}
+
+code {
+    color: blue;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+
+}

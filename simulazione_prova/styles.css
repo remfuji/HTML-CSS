@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*main*/
+main {
+    display: flex;
+    height: 100vh;
+}
+
+/*left-side*/
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.3;
+    background-color: #1c1d1f;
+    max-width: 200px;
+
+}
+
+.side-bar>.first-list {
+    padding-left: 20px;
+    list-style-type: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a4a4a4;
+}
+
+.side-bar>ul {
+    padding-left: 20px;
+    list-style-type: none;
+    padding-bottom: 20px;
+
+}
+
+.side-bar>div {
+    width: 100%;
+    margin-top: auto;
+}
+
+.album-image-side>img {
+    width: 200px;
+}
+
+.side-bar>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-bar>ul>li>a {
+    padding-right: 20px;
+}
+
+.side-bar>ul>li {
+    color: white;
+    padding-top: 20px;
+}
+
+.side-bar>.first-list>li:nth-child(3) {
+    padding-bottom: 30px;
+}
+
+
+/*center*/
+.center {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 6;
+}
+
+.container-artist {
+    display: flex;
+    height: 500px;
+    background-image: url('https://www.djmagitalia.com/wp-content/uploads/2023/06/daft-punk-4f4e6b527e4e9-01-1024x576.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: end;
+    opacity: 0.8;
+
+}
+
+.container-artist>.info-artist {
+    color: white;
+    padding-left: 70px;
+    padding-bottom: 30px;
+}
+
+.container-artist>.info-artist>h1 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 100px;
+}
+
+
+.info-artist>p>i {
+    padding-right: 10px;
+}
+
+/*track-list*/
+.track {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#717070, #222222);
+}
+
+/*toggle status */
+
+.toggle-icon {
+    cursor: pointer;
+}
+
+.icon {
+    display: inline-block;
+    font-size: 50px;
+    list-style-type: none;
+}
+
+.icon-track {
+    display: inline-block;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+
+.icon i:last-child {
+    display: none;
+}
+
+
+#iconToggle:checked+.icon i:nth-child(1) {
+    display: none;
+}
+
+#iconToggle:checked+.icon i:nth-child(2) {
+    display: block;
+}
+
+#iconToggle {
+    display: none;
+}
+
+/*end toggle status */
+
+.play-follow {
+    padding-left: 50px;
+    align-items: center;
+}
+
+.play-follow>button,
+.play-follow>.dot-menu {
+    margin: 20px;
+}
+
+.play-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-weight: bolder;
+    background-color: green;
+    border: transparent;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.follow-btn {
+    height: 30px;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.dot-menu {
+    cursor: pointer;
+}
+
+.dot-menu>i {
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.play-follow {
+    display: flex;
+}
+
+/*card-track*/
+.track {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-list>h3 {
+    padding-left: 80px;
+    color: white;
+}
+
+.card-track,
+.track-like-minutes {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    color: white;
+}
+
+
+.card-track-info {
+    display: flex;
+    padding: 5px;
+}
+
+.card-track-info>div,
+.card-track-info>img,
+.track-like-minutes>i,
+.track-like-minutes>label {
+    padding-right: 10px;
+}
+
+.card-track {
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.track-name>i {
+    background-color: green;
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.side-left {
+    display: flex;
+}
+
+.track-list {
+    flex-grow: 2;
+}
+
+.side-right {
+    flex-grow: 1;
+    color: white;
+
+}
+
+.card-right-side {
+    display: flex;
+    color: white;
+    margin-top: 10px;
+}
+
+.txt-card-right {
+    padding-left: 10px;
+}
+
+.card-right-side>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.second-img>img {
+    border-radius: 0%;
+}
+.card-right-side> .txt-card-right>div>img{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+}
+
+
+/* #ciao {
+    background-color: white;
+    color: #1c1d1f;
+
+
+
+}
+
+#ciao>img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+} */
+
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    margin-top: auto;
+    background-color: #1c1d1f;
+    height: 100px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    flex-grow: 0.1;
+
+}
+
+.name-track {
+    padding-right: 30px;
+}
+
+.name-track>.name-song {
+    font-weight: bold;
+}
+
+.name-track>.name-artist {
+    font-weight: lighter;
+}
+
+.footer-center {
+    flex-grow: 1;
+}
+
+.player {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.player>a {
+    padding-right: 30px;
+}
+
+.player-tracking>progress {
+    width: 100%;
+
+
+}
+
+.footer-right {
+    flex-grow: 0.1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-right>progress {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.footer-right>a {
+    margin-right: 10px;
+}
