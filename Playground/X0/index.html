@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CSS Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            margin: 0 auto;
+        }
+
+        main {
+            height: 100vh;
+            display: grid;
+            background-color: #f0f0f0;
+            grid-template-columns: 1fr;
+            grid-template-rows: 5fr 1fr 5fr;
+
+        }
+
+        main>div {
+            /* border: 1px solid black; */
+        }
+
+        header {
+        display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      
+
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        #tendina-menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        #tendina-menu>a {
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+        }
+
+        .hamburger div {
+            width: 30px;
+            height: 4px;
+            background-color: #1ec542;
+            margin: 6px 0;
+        }
+
+        .parallax {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* The image used */
+            background-image: url('https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/5%20Best%20Coding%20Programs%20for%20Aspiring%20Programmers1650304687858345.jpg');
+
+            /* Full height */
+            min-height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .caption {
+            display: flex;
+            background-color: rgb(37, 37, 37);
+            color: #fff;
+            font-size: 25px;
+            letter-spacing: 10px;
+           
+            justify-content: center;
+           align-items: center;
+
+        }
+
+        .caption>a {
+            text-decoration: none;
+            color: #fff;
+            
+        }
+        .parallax2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* The image used */
+    background-image: url('https://www.keepcalmandrinkcoffee.com/wp-content/uploads/2020/03/pillola-rossa-o-pillola-blu-1080x675.jpg');
+  
+    /* Full height */
+    min-height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <header>
+            <div class="logo">Logo</div>
+            <div class="menu " id="menu">
+                <a href="#">Sezione 1</a>
+                <a href="#">Sezione 2</a>
+                <a href="#">Sezione 3</a>
+                <a href="#">Sezione 4</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </header>
+        <div id="tendina-menu">
+            <a href="#">Sezione 1</a>
+            <a href="#">Sezione 2</a>
+            <a href="#">Sezione 3</a>
+            <a href="#">Sezione 4</a>
+        </div>
+
+
+
+        <main>
+            <div class="parallax"></div>
+            <div class="caption"><a href="#">ENTER THE MATRIX</a></div>
+            <div class="parallax2"></div>
+           
+
+        </main>
+
+        <footer>
+            <p>Footer - © 2023 Your Website</p>
+        </footer>
+    </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+        const tendina = document.getElementById('tendina-menu');
+
+        function updateMenuDisplay() {
+            if (window.innerWidth < 768) {
+                menu.style.display = 'none';
+                hamburger.style.display = 'flex';
+
+            } else {
+                menu.style.display = 'flex';
+                hamburger.style.display = 'none';
+                tendina.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('resize', () => {
+            updateMenuDisplay();
+        });
+        // window.addEventListener('resize', () => {
+        //     if (window.innerWidth < 768) {
+        //       menu.style.display = 'none';
+        //       hamburger.style.display='none';
+        //     } else {
+        //         menu.style.display = 'flex';
+        //         hamburger.style.display = 'none';
+        //     }
+        //   });
+        //   window.addEventListener('resize', () => {
+        //     if (window.innerWidth > 767) {
+        //       menu.style.display = 'flex';
+        //       hamburger.style.display='none';
+        //     } else {
+        //         menu.style.display ='none';
+        //         hamburger.style.display = 'flex';
+        //     }
+        //   });
+
+
+        hamburger.addEventListener('click', () => {
+            if (tendina.style.display === 'none') {
+                tendina.style.display = 'flex';
+
+            } else {
+                tendina.style.display = 'none';
+            }
+        });
+
+    </script>
+</body>
+
+</html>
