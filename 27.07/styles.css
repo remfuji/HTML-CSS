@@ -1,0 +1,134 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: grey;
+    justify-items: center;
+    align-items: center;
+    padding: 5px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: grid;
+   grid-template-columns: auto 30% 20% auto;
+   grid-template-areas: ". main side .";
+   height: 800px;
+   gap: 15px;
+   margin-top: 10px;
+           
+}
+.main-content{
+    display: grid;
+    grid-area: main;
+    grid-template-rows: 5% 5% 45% 45%;
+    gap: 10px;
+
+}
+.first-main, .second-main, .article-container, .try, .create-post, .reddit-info{
+    background-color: rgb(100, 99, 99);
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+.first-main{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    padding: 5px;
+    
+
+}
+.second-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.second-main-container{
+    display: flex;
+    
+}
+
+.second-main-container>div, .settings-main{
+    padding: 10px;
+}
+
+.article-container{
+    display: grid;
+    grid-template-columns: 5% auto;
+    
+
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    
+}
+
+article {
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+}
+.article-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(76, 75, 75);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+
+}
+.call-to-action{
+    display: flex;
+    align-items: center;
+
+}
+
+.side-content{
+    display: grid;
+    grid-area: side;
+    grid-template-rows: 10% 30% 30%;
+    gap: 10px;
+}
+.try{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+}
+.icon-reddit{
+    display: flex;
+    align-items: center;  
+    
+}
+.create-post{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+.create-post>.img>img{
+    width: 150px;
+    height: 20px;
+}
+.div-btn{
+    display: flex;
+    flex-direction: column;
+}
+.reddit-info,.style-bottom{
+    display: flex;
+  flex-direction: column;
+    
+}
+
+/* .reddit-info-txt{
+    display: grid;
+} */
+
+
