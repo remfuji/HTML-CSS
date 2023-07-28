@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <section>
+            <nav>
+                <div class="user-nav">
+                    <div class="user-logo">
+                        <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="user image">
+                    </div>
+                    <div class="options">
+                        <a href=""><i class="fa-regular fa-message fa-xl" style="color: #2f343c;"></i></a>
+                        <a href=""><i class="fa-solid fa-ellipsis-vertical fa-xl" style="color: #2f343c;"></i></a>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notification-container">
+                        <div class="logo-notification">
+                            <i class="fa-solid fa-bell-slash fa-xl" style="color: #3d3f43;"></i>
+                        </div>
+                        <div class="actions-notification">
+                            <div>Get Notified of New Message</div>
+                            <div><a href="#">Turn on Desktop Notification</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                        <input type="text" placeholder="Search or start a new chat">
+                        
+                </div>
+                <div class="chat-list">
+
+                    <div class="box-contact">
+                        <div class="user-logo">
+                            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div>
+                            <div class="name-contact">
+                                <div>Rasputin</div>
+                                <div>12:30</div>
+                            </div>
+                            <div class="intro-mex"><i class="fa-solid fa-check"></i>ciao come va stai bene yo</div>
+                        </div>
+                    </div>
+                    <div class="box-contact">
+                        <div class="user-logo">
+                            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div>
+                            <div class="name-contact">
+                                <div>nonna</div>
+                                <div>7:32</div>
+                            </div>
+                            <div class="intro-mex"><i class="fa-solid fa-check"></i>domani andiamo al mare</div>
+                        </div>
+                    </div>
+                    <div class="box-contact">
+                        <div class="user-logo">
+                            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div>
+                            <div class="name-contact">
+                                <div>mamma</div>
+                                <div>13:40</div>
+                            </div>
+                            <div class="intro-mex">hai mangiato?</div>
+                        </div>
+                    </div>
+                    <div class="box-contact current-box">
+                        <div class="user-logo">
+                            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div>
+                            <div class="name-contact " >
+                                <div>Best Dude</div>
+                                <div>17:30</div>
+                            </div>
+                            <div class="intro-mex" id="overflow-container"><i class="fa-solid fa-check"></i>yo man what you're up to tonight?</div>
+                        </div>
+                    </div>
+                    <div class="box-contact">
+                        <div class="user-logo">
+                            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div>
+                            <div class="name-contact">
+                                <div>Rasputin</div>
+                                <div>12:30</div>
+                            </div>
+                            <div class="intro-mex"><i class="fa-solid fa-check"></i>Lorem ipsum dolor si</div>
+                        </div>
+                    </div>
+                    <div class="box-contact">
+                        <div class="user-logo">
+                            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div>
+                            <div class="name-contact">
+                                <div>Rasputin</div>
+                                <div>12:30</div>
+                            </div>
+                            <div class="intro-mex"><i class="fa-solid fa-check"></i>Lorem ipsum dolor si</div>
+                        </div>
+                    </div>
+                    <div class="box-contact">
+                        <div class="user-logo">
+                            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div>
+                            <div class="name-contact">
+                                <div>Rasputin</div>
+                                <div>12:30</div>
+                            </div>
+                            <div class="intro-mex"><i class="fa-solid fa-check"></i>Lorem ipsum dolor si</div>
+                        </div>
+                    </div>
+                   
+                    
+
+                </div>
+
+            </nav>
+            <div class="container-text-box">
+                <div class="contact-info-actions">
+                    <div class="contact">
+                        <div class="contact-container">
+                            <div class="user-logo">
+                                <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </div>
+                            <div class="contact-info">
+                                <div>
+                                    <h3>Best Dude</h3>
+                                </div>
+                                <div>Last seen Yestarday 12:34</div>
+                            </div>
+                        </div>
+                        <div class="icon-contact">
+                            <a href=""><i class="fa-solid fa-paperclip fa-xl" style="color: #2f343c;" ></i></a>
+                            <a href=""><i class="fa-solid fa-ellipsis-vertical fa-xl" style="color: #2f343c;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-area">
+
+                    <div class="box">
+                        <div class="left">
+                            <div>ciao</div>
+                            <div>ciao</div>
+                        </div>
+                        <div class="right">
+                            <div>ciao</div>
+                            <div>ciao <i class="fa-solid fa-check"></i></div>
+                        </div>
+                    </div>
+                    <div class="center-box">
+                        <div>yesterday</div>
+                    </div>
+                    <div class="box">
+                        <div class="left">
+                            <div>ciao</div>
+                            <div>ciao</div>
+                        </div>
+                        <div class="right">
+                            <div>ciao</div>
+                            <div>ciao<i class="fa-solid fa-check-double"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <div class="left">
+                            <div>ciao</div>
+                            <div>ciao</div>
+                        </div>
+                        <div class="right">
+                            <div>ciao</div>
+                            <div>ciao</div>
+                        </div>
+                    </div>
+                    <div class="center-box">
+                        <div>yesterday</div>
+                    </div>
+                    <div class="box">
+                        <div class="left">
+                            <div>ciao duble check</div>
+                            <div>13:20</div>
+                        </div>
+                        <div class="right">
+                            <div>super ciao</div>
+                            <div>23:40<i class="fa-solid fa-check-double"></i></div>
+                        </div>
+                    </div>
+                    <div class="center-box">
+                        <div>14:30</div>
+                    </div>
+                    <div class="box">
+                        <div class="left">
+                            <div>ciao ancora</div>
+                            <div>4:49</div>
+                        </div>
+                        <div class="left">
+                            <div>ciaoooone</div>
+                            <div>7:30</div>
+                        </div>
+                        <div class="right">
+                            <div>page when looking at its layou</div>
+                            <div>12:40<i class="fa-solid fa-check-double"></i></div>
+                        </div>
+                        <div class="right">
+                            <div>nt of a page when looking at its layout. The point of using Lorem </div>
+                            <div>14:30<i class="fa-solid fa-check-double"></i></div>
+                        </div>
+                    </div>
+                    
+
+
+
+
+                
+
+                </div>
+                <div class="input-text">
+                    <a href=""><i class="fa-regular fa-face-smile fa-xl" style="color: #3d3f43;"></i></a>
+                    <input type="text" name="name">
+                    <a href=""><i class="fa-solid fa-microphone fa-xl" style="color: #3d3f43;"></i></a>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <script>
+        const textContainer = document.getElementById('overflow-container');
+            const maxLength = 26; 
+
+            if (textContainer.textContent.length > maxLength) {
+                textContainer.textContent = textContainer.textContent.substring(0, maxLength) + '...';
+            }
+    </script>
+</body>
+
+</html>
