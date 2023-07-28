@@ -6,22 +6,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     background-image: url("https://i.redd.it/1xmndtsxffw51.png");
 }
 
 .container {
     display: grid;
     height: 95vh;
-    
+
     grid-template-areas:
-            ". section  ."
-            ". section ."
-            ". section  .";
-        
-        grid-template-columns: 1fr 7fr 1fr;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        ". section  ."
+        ". section ."
+        ". section  .";
+
+    grid-template-columns: 1fr 7fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -30,48 +30,58 @@ section {
     grid-area: section;
     display: grid;
     grid-template-areas:
-            "chat text-box"
-            "chat text-box";
-        grid-template-columns: 2fr 6fr;
-        border: 1px solid gray;
-        box-shadow: 0 0 5px  rgb(136, 135, 135);
+        "chat text-box"
+        "chat text-box";
+    grid-template-columns: 2fr 6fr;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px rgb(136, 135, 135);
 
 }
-nav{
+
+nav {
     display: grid;
     grid-area: chat;
-    grid-template-areas: 
+    grid-template-areas:
         "user-nav"
         "notification"
         "search-bar"
         "chat-list";
-        grid-template-rows: auto auto 1fr 11fr;
-    background-color:  #efefef;
+    grid-template-rows: auto auto 1fr 11fr;
+    background-color: #efefef;
 }
-.user-nav, .notification, .serach-bar, .chat-list{
+
+.user-nav,
+.notification,
+.serach-bar,
+.chat-list {
     padding: 20px;
 }
-.user-nav{
+
+.user-nav {
     grid-area: user-nav;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
-    
+
 }
-.user-logo>img{
+
+.user-logo>img {
     width: 70px;
     clip-path: circle();
 }
-.options>a> i{
+
+.options>a>i {
     padding-right: 30px;
 }
-.notification-container{
+
+.notification-container {
     display: flex;
     padding-left: 20px;
 }
-.notification{
+
+.notification {
     grid-area: notification;
     display: flex;
     align-items: center;
@@ -79,40 +89,44 @@ nav{
     border-right: 1px solid gray;
 }
 
-.actions-notification{
+.actions-notification {
     padding-left: 30px;
 }
-.search-bar{
+
+.search-bar {
     grid-area: search-bar;
     display: flex;
     border-bottom: 1px solid gray;
-   
-   
-    
+
+
+
 }
-.search-bar>input{
+
+.search-bar>input {
     width: 100%;
     border: 0vw;
     background-color: #efefef;
     border-right: 1px solid gray;
 }
-.search-bar>button{
+
+.search-bar>button {
     width: 70px;
     border: 0vw;
 }
 
-.chat-list{
+.chat-list {
     grid-area: chat-list;
     border-right: 1px solid gray;
-    
+
 }
-.intro-mex>i{
+
+.intro-mex>i {
     padding-right: 3px;
 }
 
 
 
-.box-contact{
+.box-contact {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
@@ -120,101 +134,118 @@ nav{
     padding-right: 15px;
     padding-top: 15px;
 }
-.box-contact:hover{
+
+.box-contact:hover {
     background-color: #969999;
     border-radius: 7px;
     cursor: pointer;
 }
-.current-box{
+
+.current-box {
     background-color: #969999;
     border-radius: 7px
-    
 }
-.name-contact{
+
+.name-contact {
     display: flex;
     justify-content: space-between;
     padding-bottom: 5px;
-    
+
 }
-.name-contact>div:nth-child(1){
+
+.name-contact>div:nth-child(1) {
     font-weight: bold;
 }
+
 .container-text-box {
     grid-area: text-box;
     display: grid;
     grid-template-areas:
-            "contact-info-actions"
-            "text-area"
-            "input-text";
-        grid-template-rows: auto 1fr auto;
+        "contact-info-actions"
+        "text-area"
+        "input-text";
+    grid-template-rows: auto 1fr auto;
     background-color: #efefef;
 }
-.contact-info-actions{
+
+.contact-info-actions {
     grid-area: contact-info-actions;
     background-color: #efefef;
     border-bottom: 1px solid gray;
 }
-.text-area{
+
+.text-area {
     grid-area: text-area;
-    
+
 }
+
 .text-area::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     background-color: #F5F5F5;
 }
-.input-text{
+
+.input-text {
     grid-area: input-text;
     border-top: 1px solid gray;
 }
-.contact{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-padding: 20px;
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
-.contact-container{
+
+.contact-container {
     display: flex;
 }
-.contact-info{
+
+.contact-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.icon-contact>a>i{
+
+.icon-contact>a>i {
     padding-right: 30px;
 }
-.input-text{
+
+.input-text {
     display: flex;
     padding: 10px;
     background-color: #efefef;
 
 }
-.input-text>input{
+
+.input-text>input {
     flex-grow: 1;
-    
+
 }
-.input-text>a>i{
+
+.input-text>a>i {
     padding: 20px;
 }
 
 
-.text-area{
+.text-area {
     height: 750px;
     overflow: auto;
     padding: 50px;
     background-image: url("https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg");
-    
-    
-    
-    
+
+
+
+
 }
-.box{
+
+.box {
     display: grid;
-    
-    
+
+
 }
-.right{
+
+.right {
     justify-self: end;
     display: flex;
     padding: 10px;
@@ -224,9 +255,10 @@ padding: 20px;
     margin: 5px;
     color: white;
     max-width: 60%;
-    
-    
+
+
 }
+
 .left {
     justify-self: start;
     display: flex;
@@ -237,37 +269,43 @@ padding: 20px;
     margin: 5px;
     color: white;
     max-width: 60%;
-   
+
 }
 
-.left>div:nth-child(2){
+.left>div:nth-child(2) {
     display: flex;
     align-self: flex-end;
-        padding-top: 15px;
-        padding-left: 50px;
+    padding-top: 15px;
+    padding-left: 50px;
     color: rgb(143, 141, 141);
 }
+
 .right>div:nth-child(2) {
     display: flex;
     align-self: flex-end;
     padding-top: 15px;
-        padding-left: 50px;
+    padding-left: 50px;
     color: rgb(143, 141, 141);
 
 }
-.right > div > i, .left > div > i{
+
+.right>div>i,
+.left>div>i {
     padding-left: 5px;
 }
-.center-box{
+
+.center-box {
     display: grid;
 }
-.center-box>div{
+
+.center-box>div {
     justify-self: center;
     padding: 10px;
-        box-shadow: 2px 2px 2px rgb(136, 135, 135);
-        background-color: #e1f4fb;
-        border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(136, 135, 135);
+    background-color: #e1f4fb;
+    border-radius: 10px;
 }
+
 /*scroll bar */
 .text-area::-webkit-scrollbar {
     width: 13px;
@@ -288,15 +326,3 @@ padding: 20px;
 .text-area::-webkit-scrollbar-thumb:hover {
     background: #3f4447;
 }
-
-
-
-
-
-
-
-
-
-
-
-
