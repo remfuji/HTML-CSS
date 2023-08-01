@@ -3,135 +3,19 @@
     margin: 0;
     padding: 0;
 }
-/*grid styles */
+@keyframes blink {
+    0% {
+        opacity: 0
+    }
 
-.wrapper {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 60px auto auto  60px;
-    grid-template-columns: auto 80%;
-    gap: 5px;
-    grid-template-areas:
-        "header  header"
-        "sidebar content"
-        "side-down content"
-        "footer footer";
-    background-color: #fff;
-    color: #444;
-    align-content: stretch;
+    49% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
 }
-
-.sidebar {
-    grid-area: sidebar;
-
-}
-
-.content {
-    grid-area: content;
-}
-
-.header {
-    grid-area: header;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-.side-down {
-    grid-area: side-down;
-}
-
-
-
-.box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 150%;
-}
-
-
-
-/*header */
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: sticky;
-}
-
-.logo {
-    font-size: 24px;
-}
-
-.menu {
-    display: flex;
-}
-
-#tendina-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.menu > a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0 10px;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-}
-
-.hamburger > div {
-    width: 30px;
-    height: 4px;
-    background-color: #1ec542;
-    margin: 6px 0;
-}
-
-
-.content{
-    display: grid;
-    grid-template-columns: 50%;
-    grid-template-areas:
-        "content_up  content_up"
-        "content_down  content_down";
-    
-    
-    
-}
-.content_up{
-    
-    grid-area: content_up;
-}
-.content_down {
-    grid-area: content_down;
-}
-
-
-.sidebar{
-    display: flex;
-    justify-content: start;
-}
-.sidebar>ul{
-    list-style-type: none;
-}
-
-img{
-    height: 200px;
-}
-.content>.img{
-    display: grid;
-    align-content:start;
+blink {
+    animation: blink 1s infinite;
 }
